@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header UI */
+#ui {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#ui h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #00ff66;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+#score {
+    margin-top: 8px;
+    font-size: 1.2em;
+}
+
+/* Game container */
+#gameContainer {
+    margin-top: 100px;
+    border: 3px solid #00ff00;
+    width: 640px;
+    height: 640px;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+#game {
+    display: block;
+    background: transparent;
+    /* no CSS pattern, JS will draw */
+    image-rendering: pixelated;
+    /* keep edges crisp */
+}
+
+/* Popup overlays */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Popup boxes */
+.box {
+    background: #111;
+    border: 2px solid #00ff00;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.box h2 {
+    color: #00ff66;
+}
+
+.box button {
+    background: #00cc00;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.box button:hover {
+    background: #009900;
+}
